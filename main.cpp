@@ -1,6 +1,11 @@
 #include <iostream>
 
-int main()
+int main(int argc, char* argv[])
 {
-    std::cout << "This is a test of CI systems" << std::endl;
+    if (argc < 1)
+    {
+        std::cout << "Only one arg can be supplied" << std::endl;
+        return 0;
+    }
+    std::cout << argv[1] << std::endl;
 }
