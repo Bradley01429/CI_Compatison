@@ -8,6 +8,7 @@ pipeline {
                 sh 'mkdir build'
                 sh 'cd build'
                 sh 'cmake ..'
+                sh 'make'
             }
         }
     }
