@@ -12,5 +12,3 @@ add_test(NAME TwoArgs COMMAND BuiltExe "A" "B")
 set_property(TEST TwoArgs PROPERTY WILL_FAIL True)
 
 add_test(NAME TestSingleArg COMMAND BuiltExe "StringA")
-
-add_test(NAME BADTEST COMMAND BuiltExe "A" "C")
