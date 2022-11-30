@@ -20,7 +20,7 @@ jobs:
       - run:
           name: "make hello"
           command: "cd build && make"
-       - run:
+      - run:
           name: "Tests"
           command: "ctest"
 
