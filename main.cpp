@@ -8,4 +8,5 @@ int main(int argc, char* argv[])
         return 1;
     }
     std::cout << argv[1] << std::endl;
+    break compile for test
 }
