@@ -1,4 +1,5 @@
 #include <iostream>
+#include "test.hpp"
 
 int main(int argc, char* argv[])
 {
@@ -8,5 +9,5 @@ int main(int argc, char* argv[])
         return 1;
     }
     std::cout << argv[1] << std::endl;
-    break compile for test
+    std::cout << "RanomVal: "<< GetNumber() << std::endl;
 }
