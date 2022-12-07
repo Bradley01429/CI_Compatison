@@ -1,8 +1,7 @@
 project(CITEST)
 cmake_minimum_required(VERSION 3.16)
 
-add_executable(BuiltExe main.cpp)
-
+add_executable(BuiltExe main.cpp test.cpp)
 
 enable_testing()
 add_test(NAME NoArgs COMMAND BuiltExe)

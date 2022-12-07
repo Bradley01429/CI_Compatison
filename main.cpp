@@ -9,5 +9,7 @@ int main(int argc, char* argv[])
         return 1;
     }
     std::cout << argv[1] << std::endl;
-    std::cout << "RanomVal: "<< GetNumber() << std::endl;
+    std::cout << "RanomVal: "<< GetNumber<float>() << std::endl;
+    std::cout << "RanomVal: "<< GetNumber<double>() << std::endl;
+    std::cout << "RanomVal: "<< GetNumber<std::size_t>() << std::endl;
 }

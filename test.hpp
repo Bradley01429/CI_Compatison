@@ -1,1 +1,2 @@
-double GetNumber();
+template <typename T>
+T GetNumber();
