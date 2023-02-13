@@ -1,6 +1,7 @@
 #include <iostream>
 #include "test.hpp"
 
+// This is a test comment
 template<typename T>
 void PrintNumberToScreen()
 {
