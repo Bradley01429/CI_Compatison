@@ -8,7 +8,8 @@
   <param name="ignoreKnownHosts" value="true" />
   <param name="secure:password" value="credentialsJSON:70668f54-f42f-490f-81d6-011a3d92626a" />
   <param name="submoduleCheckout" value="CHECKOUT" />
-  <param name="teamcity:branchSpec" value="refs/heads/*" />
+  <param name="teamcity:branchSpec"><![CDATA[refs/heads/*
+refs/pull/*/head]]></param>
   <param name="url" value="https://github.com/Bradley01429/CI_Compatison" />
   <param name="useAlternates" value="AUTO" />
   <param name="usernameStyle" value="USERID" />
