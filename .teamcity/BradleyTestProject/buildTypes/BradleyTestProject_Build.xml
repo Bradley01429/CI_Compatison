@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="a8da0528-329f-4d0d-805f-1ae63272c7ad" xsi:noNamespaceSchemaLocation="https://www.jetbrains.com/teamcity/schemas/2021.1/project-config.xsd">
+  <name>Build</name>
+  <description />
+  <settings>
+    <parameters />
+    <build-runners>
+      <runner id="RUNNER_88" name="" type="jetbrains-cmake-conf">
+        <parameters>
+          <param name="teamcity.step.mode" value="default" />
+          <param name="ui-jetbrains-cmake-conf-source-path" value="CMakeLists.txt" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_93" name="" type="jetbrains-cmake-build">
+        <parameters>
+          <param name="teamcity.step.mode" value="default" />
+          <param name="ui-jetbrains-cmake-build-source-path" value="" />
+        </parameters>
+      </runner>
+    </build-runners>
+    <vcs-settings>
+      <vcs-entry-ref root-id="BradleyTestProject_HttpsGithubComBradley01429ciCompatisonRefsHeadsMain" />
+    </vcs-settings>
+    <requirements />
+    <build-triggers>
+      <build-trigger id="TRIGGER_5" type="vcsTrigger">
+        <parameters>
+          <param name="branchFilter" value="+:*" />
+          <param name="enableQueueOptimization" value="true" />
+          <param name="quietPeriodMode" value="DO_NOT_USE" />
+        </parameters>
+      </build-trigger>
+    </build-triggers>
+    <build-extensions>
+      <extension id="perfmon" type="perfmon">
+        <parameters>
+          <param name="teamcity.perfmon.feature.enabled" value="true" />
+        </parameters>
+      </extension>
+      <extension id="BUILD_EXT_7" type="commit-status-publisher">
+        <parameters>
+          <param name="github_authentication_type" value="token" />
+          <param name="github_host" value="https://api.github.com" />
+          <param name="publisherId" value="githubStatusPublisher" />
+          <param name="secure:github_access_token" value="credentialsJSON:606348ac-5e9c-436e-a67b-1240fd406dff" />
+          <param name="vcsRootId" value="BradleyTestProject_HttpsGithubComBradley01429ciCompatisonRefsHeadsMain" />
+        </parameters>
+      </extension>
+    </build-extensions>
+    <cleanup />
+  </settings>
+</build-type>
+
