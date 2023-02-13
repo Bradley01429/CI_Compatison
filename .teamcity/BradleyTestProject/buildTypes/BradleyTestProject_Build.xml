@@ -37,6 +37,15 @@
           <param name="teamcity.perfmon.feature.enabled" value="true" />
         </parameters>
       </extension>
+      <extension id="BUILD_EXT_7" type="commit-status-publisher">
+        <parameters>
+          <param name="github_authentication_type" value="token" />
+          <param name="github_host" value="https://api.github.com" />
+          <param name="publisherId" value="githubStatusPublisher" />
+          <param name="secure:github_access_token" value="credentialsJSON:606348ac-5e9c-436e-a67b-1240fd406dff" />
+          <param name="vcsRootId" value="BradleyTestProject_HttpsGithubComBradley01429ciCompatisonRefsHeadsMain" />
+        </parameters>
+      </extension>
     </build-extensions>
     <cleanup />
   </settings>
