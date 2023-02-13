@@ -21,7 +21,9 @@
     <vcs-settings>
       <vcs-entry-ref root-id="BradleyTestProject_HttpsGithubComBradley01429ciCompatisonRefsHeadsMain" />
     </vcs-settings>
-    <requirements />
+    <requirements>
+      <equals id="RQ_3" name="env.OS" value="Linux" />
+    </requirements>
     <build-triggers>
       <build-trigger id="TRIGGER_5" type="vcsTrigger">
         <parameters>
