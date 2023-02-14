@@ -5,11 +5,11 @@
   <project-extensions>
     <extension id="PROJECT_EXT_39" type="versionedSettings">
       <parameters>
-        <param name="buildSettings" value="ALWAYS_USE_CURRENT" />
+        <param name="buildSettings" value="PREFER_VCS" />
         <param name="credentialsStorageType" value="credentialsJSON" />
         <param name="enabled" value="true" />
         <param name="rootId" value="BradleyTestProject_HttpsGithubComBradley01429ciCompatisonRefsHeadsMain" />
-        <param name="showChanges" value="false" />
+        <param name="showChanges" value="true" />
       </parameters>
     </extension>
   </project-extensions>
